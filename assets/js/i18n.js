@@ -39,7 +39,7 @@ class I18n {
    */
   get(key) {
     const keys = key.split('.');
-    let value = languages[this.currentLanguage];
+    let value = window.languages[this.currentLanguage];
 
     for (const k of keys) {
       value = value?.[k];

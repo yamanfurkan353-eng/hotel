@@ -225,6 +225,12 @@ header.scrolled {
   transition: all var(--transition-fast);
 }
 
+.lang-switch.active {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  border-color: var(--color-secondary);
+}
+
 .lang-switch:hover {
   background: var(--color-secondary);
   color: var(--color-primary);
@@ -480,6 +486,99 @@ section:last-child {
 
 .grid-4 {
   grid-template-columns: repeat(4, 1fr);
+}
+
+/* ================================
+   FORMS
+   ================================ */
+
+.form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+  font-size: var(--fs-small);
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-accent);
+  color: var(--color-text);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  transition: all var(--transition-fast);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+  font-family: var(--font-body);
+}
+
+/* ================================
+   GALLERY
+   ================================ */
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  transition: opacity var(--transition-normal);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.filter-btn {
+  display: inline-block;
+  margin: 0 var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border: 2px solid var(--color-secondary);
+  background: transparent;
+  color: var(--color-secondary);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-weight: var(--fw-semibold);
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  font-size: var(--fs-small);
+  letter-spacing: 1px;
+}
+
+.filter-btn.active {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  border-color: var(--color-secondary);
+}
+
+.filter-btn:hover {
+  background: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 /* ================================

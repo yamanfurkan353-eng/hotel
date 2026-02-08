@@ -3,7 +3,8 @@
    Supports: Turkish & English
    ================================ */
 
-const languages = {
+// Global languages object for i18n system
+window.languages = {
   tr: {
     // Navigation
     nav: {
