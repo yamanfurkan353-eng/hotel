@@ -1,0 +1,397 @@
+/* ================================
+   RESPONSIVE DESIGN - Mobile First
+   ================================ */
+
+/* ================================
+   TABLET - 768px and up
+   ================================ */
+
+@media (max-width: 768px) {
+  :root {
+    --fs-h1: 2.5rem;
+    --fs-h2: 1.8rem;
+    --fs-h3: 1.5rem;
+    --fs-h4: 1.2rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+  }
+
+  /* Navigation */
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    flex-direction: column;
+    background: rgba(26, 26, 26, 0.98);
+    width: 100%;
+    text-align: center;
+    transition: left 0.3s;
+    gap: 0;
+    padding: var(--spacing-xl) 0;
+    backdrop-filter: blur(10px);
+  }
+
+  .nav-menu.active {
+    left: 0;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav-item {
+    padding: var(--spacing-lg) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .nav-item a::after {
+    display: none;
+  }
+
+  .nav-item a:hover {
+    color: var(--color-secondary);
+  }
+
+  /* Container */
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  /* Grid */
+  .col {
+    flex: 0 0 100%;
+    min-width: 100%;
+  }
+
+  .col-50,
+  .col-33 {
+    flex: 0 0 100%;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Hero */
+  .hero {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero .btn {
+    display: block;
+    margin: var(--spacing-md) 0;
+    width: 250px;
+    max-width: 100%;
+  }
+
+  /* Section */
+  section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Cards */
+  .card-image {
+    height: 240px;
+  }
+
+  .card-body {
+    padding: var(--spacing-md);
+  }
+
+  /* Row */
+  .row {
+    flex-direction: column;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-lg);
+  }
+
+  /* Forms */
+  input,
+  textarea,
+  select {
+    padding: var(--spacing-sm);
+  }
+
+  .form-group {
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+/* ================================
+   MOBILE - 480px and below
+   ================================ */
+
+@media (max-width: 480px) {
+  :root {
+    --fs-h1: 1.8rem;
+    --fs-h2: 1.4rem;
+    --fs-h3: 1.1rem;
+    --fs-h4: 1rem;
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.5rem;
+  }
+
+  body {
+    font-size: 0.95rem;
+  }
+
+  /* Hero */
+  .hero {
+    height: 60vh;
+    padding: var(--spacing-md) 0;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .hero .btn {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: 0.75rem;
+    width: 100%;
+  }
+
+  /* Navigation */
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-actions {
+    gap: var(--spacing-md);
+  }
+
+  .lang-switch {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.7rem;
+  }
+
+  /* Container */
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: var(--spacing-md) 0;
+  }
+
+  /* Section */
+  section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .section-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .section-header .divider {
+    width: 60px;
+  }
+
+  /* Cards */
+  .card-image {
+    height: 200px;
+  }
+
+  .card-body {
+    padding: var(--spacing-sm);
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  /* Forms */
+  label {
+    font-size: 0.8rem;
+  }
+
+  input,
+  textarea,
+  select {
+    padding: var(--spacing-sm);
+    font-size: 0.95rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: var(--spacing-lg) 0 var(--spacing-md);
+  }
+
+  .footer-section h3 {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .footer-bottom p {
+    font-size: 0.85rem;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-links a {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Layout adjustments */
+  .col {
+    flex: 0 0 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Table responsiveness */
+  table {
+    font-size: 0.9rem;
+  }
+
+  td,
+  th {
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  /* Grid adjustments */
+  .grid {
+    gap: var(--spacing-md);
+  }
+}
+
+/* ================================
+   Large Screens - 1920px and up
+   ================================ */
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+}
+
+/* ================================
+   Touch Device Optimizations
+   ================================ */
+
+@media (hover: none) and (pointer: coarse) {
+  /* Remove hover effects for touch devices */
+  .card:hover {
+    transform: none;
+  }
+
+  .card-image {
+    transform: none;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+
+  .nav-item a::after {
+    display: none;
+  }
+
+  /* Increase touch targets */
+  button,
+  a,
+  input[type="button"],
+  input[type="submit"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Enhanced active states */
+  .btn:active {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+  }
+}
+
+/* ================================
+   Print Styles
+   ================================ */
+
+@media print {
+  header,
+  footer,
+  .btn,
+  .no-print {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  section {
+    page-break-inside: avoid;
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Prestige Hotel - Lüks Deneyimler. Spa, Fine Dining, Concierge ve daha birçok hizmet.">
+    <meta name="keywords" content="spa, wellness, fine dining, concierge, fitness">
+    <meta name="author" content="The Prestige Hotel">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Lüks Deneyimler - The Prestige Hotel">
+    <meta property="og:description" content="Dünya sınıfı hizmetler ve lüks deneyimler sizi bekliyor.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <title>Lüks Deneyimler - The Prestige Hotel</title>
+</head>
+<body>
+    <!-- ================================
+         HEADER & NAVIGATION
+         ================================ -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">The Prestige Hotel</div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+                    <li class="nav-item"><a href="rooms.html" data-i18n="nav.rooms">Odalar</a></li>
+                    <li class="nav-item"><a href="services.html" data-i18n="nav.services">Hizmetler</a></li>
+                    <li class="nav-item"><a href="gallery.html" data-i18n="nav.gallery">Galeri</a></li>
+                    <li class="nav-item"><a href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="lang-switch-group">
+                        <button class="lang-switch active" data-lang="tr">TR</button>
+                        <button class="lang-switch" data-lang="en">EN</button>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================================
+             PAGE HERO
+             ================================ -->
+        <section class="hero" style="height: 50vh; margin-top: 70px;">
+            <div class="hero-content">
+                <h1 data-i18n="services.title">Lüks Deneyimler</h1>
+                <p>Dünya Sınıfı Hizmetler, İdeal Tatile Hazırlık</p>
+            </div>
+        </section>
+
+        <!-- ================================
+             SERVICES GRID
+             ================================ -->
+        <section id="services">
+            <div class="container">
+                <div class="grid grid-2">
+                    <!-- Spa & Wellness -->
+                    <div class="card" data-aos="fade-up">
+                        <img src="assets/img/spa.jpg" alt="Spa & Wellness" class="card-image" style="height: 350px;">
+                        <div class="card-body">
+                            <h2 class="card-title" data-i18n="services.spa.name">🧖 Spa & Wellness</h2>
+                            <p class="card-text" data-i18n="services.spa.description">Dünyaca ünlü terapistlerimizle rahatlamış tatil</p>
+                            <p style="color: var(--color-text-dark); margin-bottom: 1.5rem; line-height: 1.8;">
+                                Bizim özel spa merkezimizde, antik tedavilerle modern terapi teknikleri birleştirilmiştir. Masaj, 
+                                cilt bakımı, aromaterapi ve daha birçok hizmet ile tamamen yenilenmesi sağlanır.
+                            </p>
+                            <h4 style="color: var(--color-secondary); margin-bottom: 1rem;">Hizmetler:</h4>
+                            <ul style="list-style: none; color: var(--color-text-dark);">
+                                <li>💆 Başlı masaj</li>
+                                <li>🛀 Geleneksel hamam</li>
+                                <li>🧴 Yüz bakımı</li>
+                                <li>💅 Manikür & Pedikür</li>
+                                <li>🌿 Aromaterapi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Fine Dining -->
+                    <div class="card" data-aos="fade-up" style="--aos-delay: 0.1s;">
+                        <img src="assets/img/restaurant.jpg" alt="Fine Dining" class="card-image" style="height: 350px;">
+                        <div class="card-body">
+                            <h2 class="card-title" data-i18n="services.restaurant.name">🍽️ Fine Dining</h2>
+                            <p class="card-text" data-i18n="services.restaurant.description">Michelin yıldızlı şeflerimizin özgün kreasiyon menüleri</p>
+                            <p style="color: var(--color-text-dark); margin-bottom: 1.5rem; line-height: 1.8;">
+                                Ülkenin en ünlü şeflerinin yönettiği restoranlarımızda, bir haftalık yolculuğa çıkın. Her yemek, 
+                                sanat yaşıyor. Lezzetler ve sunumlar hiçbir şey ile karşılaştırılamaz.
+                            </p>
+                            <h4 style="color: var(--color-secondary); margin-bottom: 1rem;">Mutfaklar:</h4>
+                            <ul style="list-style: none; color: var(--color-text-dark);">
+                                <li>🇫🇷 Fransız Mutfağı</li>
+                                <li>🇯🇵 Japon Mutfağı</li>
+                                <li>🇮🇹 İtalyan Mutfağı</li>
+                                <li>🥘 Akdeniz Mutfağı</li>
+                                <li>🍤 Deniz Ürünleri</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Concierge Service -->
+                    <div class="card" data-aos="fade-up" style="--aos-delay: 0.2s;">
+                        <img src="assets/img/concierge.jpg" alt="Concierge" class="card-image" style="height: 350px;">
+                        <div class="card-body">
+                            <h2 class="card-title" data-i18n="services.concierge.name">🎩 24/7 Concierge</h2>
+                            <p class="card-text" data-i18n="services.concierge.description">Her istediğiniz anı gerçekleştirmek için daima hazır</p>
+                            <p style="color: var(--color-text-dark); margin-bottom: 1.5rem; line-height: 1.8;">
+                                Bizim deneyimli concierge ekibi, şehirdeki her resepsiyona girişi düzenler, uçak, tren biletleri satın alan 
+                                şey yok. Başarısız olmayan talepte başarısız olmazlar.
+                            </p>
+                            <h4 style="color: var(--color-secondary); margin-bottom: 1rem;">Hizmetler:</h4>
+                            <ul style="list-style: none; color: var(--color-text-dark);">
+                                <li>🚗 Araç Kiralama</li>
+                                <li>✈️ Havayolu Rezervasyonu</li>
+                                <li>🎭 Tiyatro & Konser Biletleri</li>
+                                <li>🍷 Özel Etkinlik Organizasyonu</li>
+                                <li>📍 Şehir Tur Rehberi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Fitness & Sports -->
+                    <div class="card" data-aos="fade-up" style="--aos-delay: 0.3s;">
+                        <img src="assets/img/fitness.jpg" alt="Fitness" class="card-image" style="height: 350px;">
+                        <div class="card-body">
+                            <h2 class="card-title" data-i18n="services.fitness.name">💪 Fitness & Spor</h2>
+                            <p class="card-text" data-i18n="services.fitness.description">Sağlık ve fitness merkezimizde motivasyonunuzu yüksek tutun</p>
+                            <p style="color: var(--color-text-dark); margin-bottom: 1.5rem; line-height: 1.8;">
+                                Profesyonel antrenörleri ile modern ekipmanın olduğu spor salonunda eğitim alın. Yoga, pilates, 
+                                yüzme ve tenis gibi birçok aktivite mevcuttur.
+                            </p>
+                            <h4 style="color: var(--color-secondary); margin-bottom: 1rem;">Tesisler:</h4>
+                            <ul style="list-style: none; color: var(--color-text-dark);">
+                                <li>🏋️ Tekneloji Spor Salonu</li>
+                                <li>🧘 Yoga & Pilates Stüdyosu</li>
+                                <li>🏊 Kapalı Yüzme Havuzu</li>
+                                <li>🎾 Tenis Kortları</li>
+                                <li>👨‍🏫 Kişisel Antrenör Hizmetleri</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Swimming Pool -->
+                    <div class="card" data-aos="fade-up" style="--aos-delay: 0.4s;">
+                        <img src="assets/img/pool.jpg" alt="Pool" class="card-image" style="height: 350px;">
+                        <div class="card-body">
+                            <h2 class="card-title" data-i18n="services.pool.name">🏊 Açık Yüzme Havuzu</h2>
+                            <p class="card-text" data-i18n="services.pool.description">Kristal berrak sularımızda günbatımında serinleyin</p>
+                            <p style="color: var(--color-text-dark); margin-bottom: 1.5rem; line-height: 1.8;">
+                                Tetap çevreye havuzun etrafında, göz alıcı panoramik manzara ile yüzün ve dinlenin. Mevsimsel 
+                                aktiviteleri, DJ seçimleri ve kokteyl sunumları vardır.
+                            </p>
+                            <h4 style="color: var(--color-secondary); margin-bottom: 1rem;">Özellikler:</h4>
+                            <ul style="list-style: none; color: var(--color-text-dark);">
+                                <li>♨️ Isıtılı Su Sistemi</li>
+                                <li>☀️ Deck Lounges & Şemsiyeler</li>
+                                <li>🍹 Poolside Bar</li>
+                                <li>👶 Çocuk Havuzu</li>
+                                <li>🌅 Manzara Terası</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Events & Meetings -->
+                    <div class="card" data-aos="fade-up" style="--aos-delay: 0.5s;">
+                        <img src="assets/img/events.jpg" alt="Events" class="card-image" style="height: 350px;">
+                        <div class="card-body">
+                            <h2 class="card-title" data-i18n="services.events.name">🎉 Events & Meetings</h2>
+                            <p class="card-text" data-i18n="services.events.description">Özel etkinlik ve toplantılar için ideal mekanlar</p>
+                            <p style="color: var(--color-text-dark); margin-bottom: 1.5rem; line-height: 1.8;">
+                                Konferanslar, düğünler, kurumsal etkinlikler, doğum günü saçlığı ve daha birçok etkinliğin düzenlemesi 
+                                mümkündür. Profesyonel ekip, en detaylı taepleri de yerine getirir.
+                            </p>
+                            <h4 style="color: var(--color-secondary); margin-bottom: 1rem;">Salonlar:</h4>
+                            <ul style="list-style: none; color: var(--color-text-dark);">
+                                <li>🎪 Ballroom (2000 m²)</li>
+                                <li>🎯 Konferans Salonları</li>
+                                <li>💍 Düğün Salonu</li>
+                                <li>🎨 Sergi Alanları</li>
+                                <li>📹 AV & Teknoloji Ekibi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             SERVICE BOOKING
+             ================================ -->
+        <section style="background: linear-gradient(135deg, rgba(42, 42, 42, 0.8), rgba(26, 26, 26, 0.9));">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Hizmet Talebinde Bulunun</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <form style="background: var(--color-accent); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); max-width: 800px; margin: 0 auto;">
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label for="service">Hizmet Seçin</label>
+                            <select name="service" id="service" required style="background: var(--color-primary); border: 1px solid var(--color-border);">
+                                <option value="">Lütfen Seçin</option>
+                                <option value="spa">Spa & Wellness</option>
+                                <option value="restaurant">Fine Dining</option>
+                                <option value="concierge">Concierge Hizmetleri</option>
+                                <option value="fitness">Fitness & Spor</option>
+                                <option value="pool">Havuz</option>
+                                <option value="events">Etkinlik & Toplantı</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Tarih Seçin</label>
+                            <input type="date" name="date" id="date" required style="background: var(--color-primary); border: 1px solid var(--color-border);">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Açıklama</label>
+                        <textarea name="message" id="message" placeholder="Lütfen detaylı açıklama yazınız..." style="background: var(--color-primary); border: 1px solid var(--color-border);"></textarea>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn btn-primary">Talep Gönder</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- ================================
+             TESTIMONIALS
+             ================================ -->
+        <section id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Deneyimli Konukların Yorumları</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="grid grid-2">
+                    <div class="card" data-aos="fade-up">
+                        <div class="card-body">
+                            <p style="color: var(--color-secondary); margin-bottom: 1rem; font-size: 1.2rem;">★★★★★</p>
+                            <p class="card-text">"Spa hizmetleri harika, ustaları gerçek profferyonel. Oda rahat, personel çok ilgili. Tavsiye ederim!"</p>
+                            <p style="color: var(--color-secondary); font-weight: 700; margin-top: 1rem;">- Caroline Schmidt</p>
+                            <p style="color: var(--color-text-dark); font-size: 0.9rem;">Berlin, Germany</p>
+                        </div>
+                    </div>
+
+                    <div class="card" data-aos="fade-up" style="--aos-delay: 0.1s;">
+                        <div class="card-body">
+                            <p style="color: var(--color-secondary); margin-bottom: 1rem; font-size: 1.2rem;">★★★★★</p>
+                            <p class="card-text">"Restoran yemeklerinin tadı harika, mutfağın kalitelik çok yüksek. Garsonlar profesyonel. Mükemmel akşam."</p>
+                            <p style="color: var(--color-secondary); font-weight: 700; margin-top: 1rem;">- Marco Rossi</p>
+                            <p style="color: var(--color-text-dark); font-size: 0.9rem;">Roma, Italy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================================
+         FOOTER
+         ================================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer.about">Hakkımızda</h3>
+                    <p data-i18n="footer.aboutText">The Prestige Hotel, lüks turizmin zirvesidir, seçkin konuklarını unutulmaz deneyimlerle karşılarız.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="footer.services">Hizmetler</h3>
+                    <ul>
+                        <li><a href="rooms.html">Odalar & Suitler</a></li>
+                        <li><a href="services.html">Spa & Wellness</a></li>
+                        <li><a href="services.html">Fine Dining</a></li>
+                        <li><a href="services.html">Etkinlikler</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="footer.policies">Politikalar</h3>
+                    <ul>
+                        <li><a data-i18n="footer.privacy" href="#privacy">Gizlilik Politikası</a></li>
+                        <li><a data-i18n="footer.terms" href="#terms">Şartlar & Koşullar</a></li>
+                        <li><a data-i18n="footer.cookies" href="#cookies">Çerez Politikası</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>İletişim</h3>
+                    <p style="color: var(--color-text-dark);">
+                        📧 <a href="mailto:info@prestigehotel.com">info@prestigehotel.com</a><br>
+                        📞 <a href="tel:+902125550123">+90 (212) 555-0123</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.rights">© 2026 The Prestige Hotel. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================================
+         JAVASCRIPT FILES
+         ================================ -->
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

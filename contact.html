@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Prestige Hotel - İletişim. Bize ulaşın, konumunu görmek, sorularınızı sorun.">
+    <meta name="keywords" content="iletişim, harita, konum, telefon, email">
+    <meta name="author" content="The Prestige Hotel">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <title>İletişim & Konum - The Prestige Hotel</title>
+</head>
+<body>
+    <!-- ================================
+         HEADER & NAVIGATION
+         ================================ -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">The Prestige Hotel</div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+                    <li class="nav-item"><a href="rooms.html" data-i18n="nav.rooms">Odalar</a></li>
+                    <li class="nav-item"><a href="services.html" data-i18n="nav.services">Hizmetler</a></li>
+                    <li class="nav-item"><a href="gallery.html" data-i18n="nav.gallery">Galeri</a></li>
+                    <li class="nav-item"><a href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="lang-switch-group">
+                        <button class="lang-switch active" data-lang="tr">TR</button>
+                        <button class="lang-switch" data-lang="en">EN</button>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================================
+             PAGE HERO
+             ================================ -->
+        <section class="hero" style="height: 50vh; margin-top: 70px;">
+            <div class="hero-content">
+                <h1 data-i18n="contact.title">İletişim & Konum</h1>
+                <p>Bize Her Zaman Ulaşabilirsiniz</p>
+            </div>
+        </section>
+
+        <!-- ================================
+             CONTACT INFORMATION
+             ================================ -->
+        <section>
+            <div class="container">
+                <div class="grid grid-3">
+                    <!-- Address -->
+                    <div class="card" data-aos="fade-up">
+                        <div style="padding: 2rem; text-align: center;">
+                            <div style="font-size: 3rem; color: var(--color-secondary); margin-bottom: 1rem;">📍</div>
+                            <h3 style="color: #fff; margin-bottom: 1rem;">Konum</h3>
+                            <p data-i18n="contact.address" style="color: var(--color-text-dark); line-height: 1.8;">
+                                Şehir Merkezi, Avenida Principal 123, 34200 Lüks Kent
+                            </p>
+                            <a href="#map" style="color: var(--color-secondary); text-decoration: underline;">Haritada Gör</a>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="card" data-aos="fade-up" style="--aos-delay: 0.1s;">
+                        <div style="padding: 2rem; text-align: center;">
+                            <div style="font-size: 3rem; color: var(--color-secondary); margin-bottom: 1rem;">📞</div>
+                            <h3 style="color: #fff; margin-bottom: 1rem;">Telefon</h3>
+                            <p style="color: var(--color-text-dark); line-height: 1.8;">
+                                <a href="tel:+902125550123" data-i18n="contact.phone">+90 (212) 555-0123</a>
+                            </p>
+                            <p style="color: var(--color-text-dark); font-size: 0.9rem; margin-top: 1rem;">
+                                24/7 Müşteri Desteği
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="card" data-aos="fade-up" style="--aos-delay: 0.2s;">
+                        <div style="padding: 2rem; text-align: center;">
+                            <div style="font-size: 3rem; color: var(--color-secondary); margin-bottom: 1rem;">📧</div>
+                            <h3 style="color: #fff; margin-bottom: 1rem;">Email</h3>
+                            <p style="color: var(--color-text-dark); line-height: 1.8;">
+                                <a href="mailto:info@prestigehotel.com" data-i18n="contact.email">info@prestigehotel.com</a>
+                            </p>
+                            <p style="color: var(--color-text-dark); font-size: 0.9rem; margin-top: 1rem;">
+                                Cevap süresi: 2 saat içinde
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hours -->
+                <div style="background: var(--color-accent); border: 2px solid var(--color-secondary); border-radius: var(--radius-lg); padding: 2rem; text-align: center; margin-top: 3rem;">
+                    <h3 style="color: var(--color-secondary); margin-bottom: 1rem;">Hizmet Saatleri</h3>
+                    <p data-i18n="contact.hours" style="color: var(--color-text); font-size: 1.1rem; line-height: 1.8;">
+                        Saat 09:00 - 22:00 | Her gün açık
+                    </p>
+                    <p style="color: var(--color-text-dark); margin-top: 1rem; font-size: 0.9rem;">
+                        Tatil günlerinde de hizmetimiz devam etmektedir.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             GOOGLE MAPS SECTION
+             ================================ -->
+        <section id="map" style="padding: 3rem 0;">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Bizi Haritada Bulun</h2>
+                <div style="
+                    border-radius: var(--radius-lg);
+                    overflow: hidden;
+                    box-shadow: var(--shadow-lg);
+                    height: 500px;
+                    background: var(--color-accent);
+                ">
+                    <!-- Embedded Google Map -->
+                    <iframe
+                        style="width: 100%; height: 100%; border: none;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1859582348946!2d28.9788!3d41.0082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzI5LjUiTiAyOMKwNTgnNDEuNyJF!5e0!3m2!1str!2str!4v1234567890"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <p style="text-align: center; color: var(--color-text-dark); margin-top: 1rem; font-size: 0.9rem;">
+                    Konum: Şehir Merkezi, Avenida Principal 123, 34200 Lüks Kent, Türkiye
+                </p>
+            </div>
+        </section>
+
+        <!-- ================================
+             CONTACT FORM
+             ================================ -->
+        <section style="background: linear-gradient(135deg, rgba(42, 42, 42, 0.8), rgba(26, 26, 26, 0.9));">
+            <div class="container">
+                <div class="section-header">
+                    <h2 data-i18n="contact.getInTouch">Bize Ulaşın</h2>
+                    <div class="divider"></div>
+                    <p style="color: var(--color-text-dark);">Soruların, teklif ve önerileriniz için bize yazınız. Çok kısa sürede cevap vereceğiz.</p>
+                </div>
+
+                <div class="grid grid-2">
+                    <!-- Contact Form -->
+                    <form class="contact-form" style="background: var(--color-accent); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border);" data-aos="fade-up">
+                        <div class="form-group">
+                            <label data-i18n="contact.name">Adınız</label>
+                            <input type="text" name="name" required style="background: var(--color-primary); border: 1px solid var(--color-border);">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Adresi</label>
+                            <input type="email" name="email" id="email" required style="background: var(--color-primary); border: 1px solid var(--color-border);">
+                        </div>
+
+                        <div class="form-group">
+                            <label data-i18n="contact.subject">Konu</label>
+                            <input type="text" name="subject" required style="background: var(--color-primary); border: 1px solid var(--color-border);">
+                        </div>
+
+                        <div class="form-group">
+                            <label data-i18n="contact.message">Mesajınız</label>
+                            <textarea name="message" placeholder="Lütfen detaylı mesaj yazınız..." required style="background: var(--color-primary); border: 1px solid var(--color-border);"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.send">Gönder</button>
+                    </form>
+
+                    <!-- Quick Links & Information -->
+                    <div data-aos="fade-up" style="--aos-delay: 0.1s;">
+                        <div style="background: var(--color-accent); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); margin-bottom: 2rem;">
+                            <h3 style="color: var(--color-secondary); margin-bottom: 1.5rem;">Hızlı Bağlantılar</h3>
+                            <ul style="list-style: none; color: var(--color-text);">
+                                <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--color-border);">
+                                    <a href="rooms.html" style="color: var(--color-secondary); text-decoration: none;">→ Odaları Görüntüle</a>
+                                </li>
+                                <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--color-border);">
+                                    <a href="services.html" style="color: var(--color-secondary); text-decoration: none;">→ Hizmetlerimiz</a>
+                                </li>
+                                <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--color-border);">
+                                    <a href="gallery.html" style="color: var(--color-secondary); text-decoration: none;">→ Galeriyi Keşfet</a>
+                                </li>
+                                <li style="padding: 0.75rem 0;">
+                                    <a href="index.html#rooms-preview" style="color: var(--color-secondary); text-decoration: none;">→ Rezervasyon Yap</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div style="background: var(--color-accent); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+                            <h3 style="color: var(--color-secondary); margin-bottom: 1.5rem;">Sosyal Ağlarımız</h3>
+                            <p style="color: var(--color-text-dark); margin-bottom: 1.5rem;">
+                                Bizi sosyal ağlardaki takip edin ve güncel haberler almak için.
+                            </p>
+                            <ul class="social-links" style="padding: 0;">
+                                <li><a href="#" title="Facebook">f</a></li>
+                                <li><a href="#" title="Instagram">📷</a></li>
+                                <li><a href="#" title="Twitter">𝕏</a></li>
+                                <li><a href="#" title="LinkedIn">in</a></li>
+                                <li><a href="#" title="YouTube">▶</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             FAQ SECTION
+             ================================ -->
+        <section id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sık Sorulan Sorular (FAQ)</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <!-- FAQ Item 1 -->
+                    <details style="background: var(--color-accent); border: 1px solid var(--color-border); border-radius: var(--radius-md); margin-bottom: 1rem; padding: 1.5rem; cursor: pointer;">
+                        <summary style="color: var(--color-secondary); font-weight: 600; font-size: 1.1rem;">
+                            Rezervasyon ne zaman yapılabilir?
+                        </summary>
+                        <p style="color: var(--color-text); margin-top: 1rem; line-height: 1.6;">
+                            Rezervasyonlar çevrim içi olarak 24/7 yapılabilir. Telefon ve email ile de bilgilendirilebilirsiniz.
+                        </p>
+                    </details>
+
+                    <!-- FAQ Item 2 -->
+                    <details style="background: var(--color-accent); border: 1px solid var(--color-border); border-radius: var(--radius-md); margin-bottom: 1rem; padding: 1.5rem; cursor: pointer;">
+                        <summary style="color: var(--color-secondary); font-weight: 600; font-size: 1.1rem;">
+                            İptal ve geri ödeme politikası nedir?
+                        </summary>
+                        <p style="color: var(--color-text); margin-top: 1rem; line-height: 1.6;">
+                            Rezervasyon tarihinden 7 gün önce iptal edilen rezervasyonlar tam geri ödeme alırlar. Daha yakın tarihlerde ödeme edilmeyen ücretler geri ödenez.
+                        </p>
+                    </details>
+
+                    <!-- FAQ Item 3 -->
+                    <details style="background: var(--color-accent); border: 1px solid var(--color-border); border-radius: var(--radius-md); margin-bottom: 1rem; padding: 1.5rem; cursor: pointer;">
+                        <summary style="color: var(--color-secondary); font-weight: 600; font-size: 1.1rem;">
+                            Öğrenci ve grup indirimleri var mı?
+                        </summary>
+                        <p style="color: var(--color-text); margin-top: 1rem; line-height: 1.6;">
+                            Evet! Öğrenciler ve 10 kişi ve daha fazla olmak koşuluyla gruplar için özel fiyatlar sunuyoruz. Lütfen details için bize ulaşınız.
+                        </p>
+                    </details>
+
+                    <!-- FAQ Item 4 -->
+                    <details style="background: var(--color-accent); border: 1px solid var(--color-border); border-radius: var(--radius-md); margin-bottom: 1rem; padding: 1.5rem; cursor: pointer;">
+                        <summary style="color: var(--color-secondary); font-weight: 600; font-size: 1.1rem;">
+                            Hayvanlar hotelimizde konaklayabilir mi?
+                        </summary>
+                        <p style="color: var(--color-text); margin-top: 1rem; line-height: 1.6;">
+                            Belirli düzenlemeleri ile evcil hayvanları kabul etmekteyiz. Önceden bilgi için lütfen reservasyon sırasında belirtiniz.
+                        </p>
+                    </details>
+
+                    <!-- FAQ Item 5 -->
+                    <details style="background: var(--color-accent); border: 1px solid var(--color-border); border-radius: var(--radius-md); margin-bottom: 1rem; padding: 1.5rem; cursor: pointer;">
+                        <summary style="color: var(--color-secondary); font-weight: 600; font-size: 1.1rem;">
+                            WiFi hizmeti ücretsiz mi?
+                        </summary>
+                        <p style="color: var(--color-text); margin-top: 1rem; line-height: 1.6;">
+                            Evet, tüm odalarda ve ortak alanlarda ücretsiz high-speed WiFi hizmeti mevcuttur.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================================
+         FOOTER
+         ================================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer.about">Hakkımızda</h3>
+                    <p data-i18n="footer.aboutText">The Prestige Hotel, lüks turizmin zirvesidir, seçkin konuklarını unutulmaz deneyimlerle karşılarız.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="footer.services">Hizmetler</h3>
+                    <ul>
+                        <li><a href="rooms.html">Odalar & Suitler</a></li>
+                        <li><a href="services.html">Spa & Wellness</a></li>
+                        <li><a href="services.html">Fine Dining</a></li>
+                        <li><a href="services.html">Etcinlikler</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="footer.policies">Politikalar</h3>
+                    <ul>
+                        <li><a data-i18n="footer.privacy" href="#privacy">Gizlilik Politikası</a></li>
+                        <li><a data-i18n="footer.terms" href="#terms">Şartlar & Koşullar</a></li>
+                        <li><a data-i18n="footer.cookies" href="#cookies">Çerez Politikası</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>İletişim</h3>
+                    <p style="color: var(--color-text-dark);">
+                        📧 <a href="mailto:info@prestigehotel.com">info@prestigehotel.com</a><br>
+                        📞 <a href="tel:+902125550123">+90 (212) 555-0123</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.rights">© 2026 The Prestige Hotel. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================================
+         JAVASCRIPT FILES
+         ================================ -->
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

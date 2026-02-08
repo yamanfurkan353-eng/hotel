@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Prestige Hotel - Odalar & Suitler. Deluxe, Premium Suite ve Royal Penthouse seçenekleri.">
+    <meta name="keywords" content="otel odaları, lüks suite, deluxe oda, penthouse">
+    <meta name="author" content="The Prestige Hotel">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Odalar & Suitler - The Prestige Hotel">
+    <meta property="og:description" content="Lüksün yeni tanımı ile tasarlanan özel odalar ve suitler.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prestigehotel.com/rooms.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <title>Odalar & Suitler - The Prestige Hotel</title>
+</head>
+<body>
+    <!-- ================================
+         HEADER & NAVIGATION
+         ================================ -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">The Prestige Hotel</div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+                    <li class="nav-item"><a href="rooms.html" data-i18n="nav.rooms">Odalar</a></li>
+                    <li class="nav-item"><a href="services.html" data-i18n="nav.services">Hizmetler</a></li>
+                    <li class="nav-item"><a href="gallery.html" data-i18n="nav.gallery">Galeri</a></li>
+                    <li class="nav-item"><a href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="lang-switch-group">
+                        <button class="lang-switch active" data-lang="tr">TR</button>
+                        <button class="lang-switch" data-lang="en">EN</button>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================================
+             PAGE HERO
+             ================================ -->
+        <section class="hero" style="height: 50vh; margin-top: 70px;">
+            <div class="hero-content">
+                <h1 data-i18n="rooms.title">Odalarımız & Suitler</h1>
+                <p>Lüksün Zirvesinde Tamamlanmış İhtişamlar</p>
+            </div>
+        </section>
+
+        <!-- ================================
+             ROOMS GALLERY
+             ================================ -->
+        <section id="rooms">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Tüm Oda Tipleri</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <!-- Deluxe Room -->
+                <article style="background: var(--color-accent); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 3rem;" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/img/deluxe-room.jpg" alt="Deluxe Oda" style="width: 100%; height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="col">
+                            <div style="padding: 2rem;">
+                                <h2 data-i18n="rooms.deluxe.name" style="margin-bottom: 1rem;">Deluxe Oda</h2>
+                                <p data-i18n="rooms.deluxe.description" style="font-size: 1.1rem; color: var(--color-text-dark); margin-bottom: 1.5rem;">Şık iç tasarım, modern rahatlık ve göz alıcı şehir manzarası</p>
+
+                                <h3 style="color: var(--color-secondary); margin-bottom: 1rem; font-weight: 600;">Özellikler:</h3>
+                                <ul style="list-style: none; margin-bottom: 2rem;">
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> 40 m² oda büyüklüğü</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> King size yatak & premium yatak takımı</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> Lüks banyo & masaj sucu</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> Smart TV & Netflix</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> Şehir manzarası balkonsu</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> 24/7 Oda servisi</li>
+                                </ul>
+
+                                <p style="font-size: 2rem; color: var(--color-secondary); font-weight: 700; margin-bottom: 1.5rem;">€250 <span style="font-size: 1.2rem; color: var(--color-text-dark);">/gece</span></p>
+
+                                <button class="btn btn-primary" onclick="bookRoom('deluxe')">Bu Odayı Rezerv Et</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Premium Suite -->
+                <article style="background: var(--color-accent); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 3rem;" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col">
+                            <div style="padding: 2rem;">
+                                <h2 data-i18n="rooms.suite.name" style="margin-bottom: 1rem;">Premium Suite</h2>
+                                <p data-i18n="rooms.suite.description" style="font-size: 1.1rem; color: var(--color-text-dark); margin-bottom: 1.5rem;">Geniş yaşam alanı, ayrı çalışma odası ve özel banyo</p>
+
+                                <h3 style="color: var(--color-secondary); margin-bottom: 1rem; font-weight: 600;">Özellikler:</h3>
+                                <ul style="list-style: none; margin-bottom: 2rem;">
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> 85 m² toplam alan</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> Yaşam odası & oturma bölümü</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> Ayrı çalışma masası & ofis alanı</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> Lüks banyo & masaj küveti</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> 2 Smart TV & Premium ses sistemi</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> Bağlantılı 2 balkon</li>
+                                </ul>
+
+                                <p style="font-size: 2rem; color: var(--color-secondary); font-weight: 700; margin-bottom: 1.5rem;">€450 <span style="font-size: 1.2rem; color: var(--color-text-dark);">/gece</span></p>
+
+                                <button class="btn btn-primary" onclick="bookRoom('suite')">Bu Odayı Rezerv Et</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="assets/img/premium-suite.jpg" alt="Premium Suite" style="width: 100%; height: 400px; object-fit: cover;">
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Royal Penthouse -->
+                <article style="background: var(--color-accent); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 3rem;" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/img/penthouse.jpg" alt="Royal Penthouse" style="width: 100%; height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="col">
+                            <div style="padding: 2rem;">
+                                <h2 data-i18n="rooms.penthouse.name" style="margin-bottom: 1rem;">Royal Penthouse</h2>
+                                <p data-i18n="rooms.penthouse.description" style="font-size: 1.1rem; color: var(--color-text-dark); margin-bottom: 1.5rem;">Çatı katında, tüm ihtişamıyla lüks ve ayrıcalık</p>
+
+                                <h3 style="color: var(--color-secondary); margin-bottom: 1rem; font-weight: 600;">Özellikler:</h3>
+                                <ul style="list-style: none; margin-bottom: 2rem;">
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> 200 m² lüks alan</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> 2 yatak odası & 2 banyo</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> Geniş yaşam alanı manzaralı</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> Pribat spa & Jacuzzi</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> Şef'li mutfak & yemek bölümü</li>
+                                    <li style="padding: 0.5rem 0; color: var(--color-text);"> 360° panoramik manzara terası</li>
+                                </ul>
+
+                                <p style="font-size: 2rem; color: var(--color-secondary); font-weight: 700; margin-bottom: 1.5rem;">€1200 <span style="font-size: 1.2rem; color: var(--color-text-dark);">/gece</span></p>
+
+                                <button class="btn btn-primary" onclick="bookRoom('penthouse')">Bu Odayı Rezerv Et</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================================
+             AMENITIES
+             ================================ -->
+        <section style="background: linear-gradient(135deg, rgba(42, 42, 42, 0.8), rgba(26, 26, 26, 0.9));">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Oda Donanımları & Hizmetleri</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="grid grid-2">
+                    <div data-aos="fade-up" style="padding: 2rem;">
+                        <h3 style="color: var(--color-secondary); margin-bottom: 1rem;">🛏️ Yaşam Konforu</h3>
+                        <ul style="list-style: none; color: var(--color-text);">
+                            <li style="padding: 0.5rem 0;">Premium yatak takımı</li>
+                            <li style="padding: 0.5rem 0;">Klima ve ısıtma sistemi</li>
+                            <li style="padding: 0.5rem 0;">Ses yalıtımlı camlar</li>
+                            <li style="padding: 0.5rem 0;">Premium halılar</li>
+                        </ul>
+                    </div>
+
+                    <div data-aos="fade-up" style="padding: 2rem; --aos-delay: 0.1s;">
+                        <h3 style="color: var(--color-secondary); margin-bottom: 1rem;">📺 Teknoloji</h3>
+                        <ul style="list-style: none; color: var(--color-text);">
+                            <li style="padding: 0.5rem 0;">Smart TV & Netflix</li>
+                            <li style="padding: 0.5rem 0;">High-speed WiFi</li>
+                            <li style="padding: 0.5rem 0;">Akıllı gergi sistemi</li>
+                            <li style="padding: 0.5rem 0;">USB & Wireless charging</li>
+                        </ul>
+                    </div>
+
+                    <div data-aos="fade-up" style="padding: 2rem; --aos-delay: 0.2s;">
+                        <h3 style="color: var(--color-secondary); margin-bottom: 1rem;">🛁 Banyo & SPA</h3>
+                        <ul style="list-style: none; color: var(--color-text);">
+                            <li style="padding: 0.5rem 0;">Marmara banyo</li>
+                            <li style="padding: 0.5rem 0;">Premium kozmetikler</li>
+                            <li style="padding: 0.5rem 0;">Masaj sucu & duş</li>
+                            <li style="padding: 0.5rem 0;">Isıtılı havlu askısı</li>
+                        </ul>
+                    </div>
+
+                    <div data-aos="fade-up" style="padding: 2rem; --aos-delay: 0.3s;">
+                        <h3 style="color: var(--color-secondary); margin-bottom: 1rem;">🍽️ Hizmetler</h3>
+                        <ul style="list-style: none; color: var(--color-text);">
+                            <li style="padding: 0.5rem 0;">24/7 Oda servisi</li>
+                            <li style="padding: 0.5rem 0;">Temizlik hizmeti</li>
+                            <li style="padding: 0.5rem 0;">Çamaşır servisi</li>
+                            <li style="padding: 0.5rem 0;">Koltuk servisi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             BOOKING CTA
+             ================================ -->
+        <section style="background: linear-gradient(135deg, var(--color-secondary), rgba(212, 175, 55, 0.8)); text-align: center; padding: 4rem 0;">
+            <div class="container">
+                <h2 style="color: var(--color-primary); margin-bottom: 1rem;">Harika Odalar Sizin İçin Bekliyor</h2>
+                <p style="color: rgba(0, 0, 0, 0.7); font-size: 1.1rem; margin-bottom: 2rem;">
+                    Lüks ve konfor bir araya gelmiş deneyimi yaşayın. Şimdi rezervasyon yapın ve özel fiyatlardan yararlanın.
+                </p>
+                <a href="index.html" class="btn" style="background: var(--color-primary); color: var(--color-secondary); border-color: var(--color-primary); font-weight: 700;">Anasayfaya Dön</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================================
+         FOOTER
+         ================================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer.about">Hakkımızda</h3>
+                    <p data-i18n="footer.aboutText">The Prestige Hotel, lüks turizmin zirvesidir, seçkin konuklarını unutulmaz deneyimlerle karşılarız.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="footer.services">Hizmetler</h3>
+                    <ul>
+                        <li><a href="rooms.html">Odalar & Suitler</a></li>
+                        <li><a href="services.html">Spa & Wellness</a></li>
+                        <li><a href="services.html">Fine Dining</a></li>
+                        <li><a href="services.html">Etkinlikler</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="footer.policies">Politikalar</h3>
+                    <ul>
+                        <li><a data-i18n="footer.privacy" href="#privacy">Gizlilik Politikası</a></li>
+                        <li><a data-i18n="footer.terms" href="#terms">Şartlar & Koşullar</a></li>
+                        <li><a data-i18n="footer.cookies" href="#cookies">Çerez Politikası</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>İletişim</h3>
+                    <p style="color: var(--color-text-dark);">
+                        📧 <a href="mailto:info@prestigehotel.com">info@prestigehotel.com</a><br>
+                        📞 <a href="tel:+902125550123">+90 (212) 555-0123</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.rights">© 2026 The Prestige Hotel. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================================
+         JAVASCRIPT FILES
+         ================================ -->
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Room booking function
+        function bookRoom(roomType) {
+            // Scroll to home with room type selected
+            localStorage.setItem('selectedRoom', roomType);
+            window.location.href = 'index.html#rooms-preview';
+        }
+    </script>
+</body>
+</html>

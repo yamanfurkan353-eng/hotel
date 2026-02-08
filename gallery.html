@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Prestige Hotel - Galeri. Odalar, Suitler ve Hizmetlerimizin Görsel Sunumu.">
+    <meta name="keywords" content="galeri, otel görselleri, fotoğraflar, lüks iç mekan">
+    <meta name="author" content="The Prestige Hotel">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <title>Görsel Galeri - The Prestige Hotel</title>
+</head>
+<body>
+    <!-- ================================
+         HEADER & NAVIGATION
+         ================================ -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">The Prestige Hotel</div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" data-i18n="nav.home">Ana Sayfa</a></li>
+                    <li class="nav-item"><a href="rooms.html" data-i18n="nav.rooms">Odalar</a></li>
+                    <li class="nav-item"><a href="services.html" data-i18n="nav.services">Hizmetler</a></li>
+                    <li class="nav-item"><a href="gallery.html" data-i18n="nav.gallery">Galeri</a></li>
+                    <li class="nav-item"><a href="contact.html" data-i18n="nav.contact">İletişim</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="lang-switch-group">
+                        <button class="lang-switch active" data-lang="tr">TR</button>
+                        <button class="lang-switch" data-lang="en">EN</button>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================================
+             PAGE HERO
+             ================================ -->
+        <section class="hero" style="height: 50vh; margin-top: 70px;">
+            <div class="hero-content">
+                <h1 data-i18n="nav.gallery">Görsel Şölen</h1>
+                <p>Lüksün Her Açısından Görseller</p>
+            </div>
+        </section>
+
+        <!-- ================================
+             GALLERY FILTER TABS
+             ================================ -->
+        <section style="padding: 3rem 0;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2 style="margin-bottom: 1.5rem;">Galerisi Keşfet</h2>
+                    <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                        <button class="btn filter-btn active" data-filter="all">Tümü</button>
+                        <button class="btn filter-btn" data-filter="rooms">Odalar</button>
+                        <button class="btn filter-btn" data-filter="services">Hizmetler</button>
+                        <button class="btn filter-btn" data-filter="amenities">Tesisler</button>
+                    </div>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="grid grid-3" id="gallery">
+                    <!-- Room Images -->
+                    <div class="gallery-item" data-category="rooms" data-aos="fade-up">
+                        <img src="assets/img/deluxe-room.jpg" alt="Deluxe Oda" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer; transition: all 0.3s;">
+                        <p style="text-align: center; margin-top: 1rem; color: var(--color-secondary);">Deluxe Oda</p>
+                    </div>
+
+                    <div class="gallery-item" data-category="rooms" data-aos="fade-up" style="--aos-delay: 0.1s;">
+                        <img src="assets/img/premium-suite.jpg" alt="Premium Suite" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer; transition: all 0.3s;">
+                        <p style="text-align: center; margin-top: 1rem; color: var(--color-secondary);">Premium Suite</p>
+                    </div>
+
+                    <div class="gallery-item" data-category="rooms" data-aos="fade-up" style="--aos-delay: 0.2s;">
+                        <img src="assets/img/penthouse.jpg" alt="Royal Penthouse" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer; transition: all 0.3s;">
+                        <p style="text-align: center; margin-top: 1rem; color: var(--color-secondary);">Royal Penthouse</p>
+                    </div>
+
+                    <!-- Service Images -->
+                    <div class="gallery-item" data-category="services" data-aos="fade-up" style="--aos-delay: 0.3s;">
+                        <img src="assets/img/spa.jpg" alt="Spa & Wellness" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                        <p style="text-align: center; margin-top: 1rem; color: var(--color-secondary);">Spa & Wellness</p>
+                    </div>
+
+                    <div class="gallery-item" data-category="services" data-aos="fade-up" style="--aos-delay: 0.4s;">
+                        <img src="assets/img/restaurant.jpg" alt="Fine Dining" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                        <p style="text-align: center; margin-top: 1rem; color: var(--color-secondary);">Fine Dining</p>
+                    </div>
+
+                    <div class="gallery-item" data-category="services" data-aos="fade-up" style="--aos-delay: 0.5s;">
+                        <img src="assets/img/concierge.jpg" alt="Concierge" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                        <p style="text-align: center; margin-top: 1rem; color: var(--color-secondary);">Concierge Hizmetleri</p>
+                    </div>
+
+                    <!-- Amenities Images -->
+                    <div class="gallery-item" data-category="amenities" data-aos="fade-up" style="--aos-delay: 0.6s;">
+                        <img src="assets/img/fitness.jpg" alt="Fitness" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                        <p style="text-align: center; margin-top: 1rem; color: var(--color-secondary);">Fitness Merkezi</p>
+                    </div>
+
+                    <div class="gallery-item" data-category="amenities" data-aos="fade-up" style="--aos-delay: 0.7s;">
+                        <img src="assets/img/pool.jpg" alt="Havuz" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                        <p style="text-align: center; margin-top: 1rem; color: var(--color-secondary);">Açık Yüzme Havuzu</p>
+                    </div>
+
+                    <div class="gallery-item" data-category="amenities" data-aos="fade-up" style="--aos-delay: 0.8s;">
+                        <img src="assets/img/events.jpg" alt="Event Salonu" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                        <p style="text-align: center; margin-top: 1rem; color: var(--color-secondary);">Event Salonları</p>
+                    </div>
+
+                    <!-- Additional Images -->
+                    <div class="gallery-item" data-category="rooms" data-aos="fade-up" style="--aos-delay: 0.9s;">
+                        <img src="assets/img/about.jpg" alt="Lobi Alanı" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                        <p style="text-align: center; margin-top: 1rem; color: var(--color-secondary);">Lobi Alanı</p>
+                    </div>
+
+                    <div class="gallery-item" data-category="amenities" data-aos="fade-up" style="--aos-delay: 1s;">
+                        <img src="assets/img/spa.jpg" alt="Masaj Odası" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                        <p style="text-align: center; margin-top: 1rem; color: var(--color-secondary);">Masaj Tesisleri</p>
+                    </div>
+
+                    <div class="gallery-item" data-category="services" data-aos="fade-up" style="--aos-delay: 1.1s;">
+                        <img src="assets/img/restaurant.jpg" alt="Bar Alanı" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;">
+                        <p style="text-align: center; margin-top: 1rem; color: var(--color-secondary);">Lounge Bar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             IMAGE STATISTICS
+             ================================ -->
+        <section style="background: linear-gradient(135deg, rgba(42, 42, 42, 0.8), rgba(26, 26, 26, 0.9));">
+            <div class="container">
+                <div class="grid grid-4" style="text-align: center;">
+                    <div data-aos="fade-up">
+                        <h3 style="font-size: 2rem; color: var(--color-secondary); margin-bottom: 0.5rem;">500+</h3>
+                        <p style="color: var(--color-text-dark);">Profesyonel Fotoğraf</p>
+                    </div>
+                    <div data-aos="fade-up" style="--aos-delay: 0.1s;">
+                        <h3 style="font-size: 2rem; color: var(--color-secondary); margin-bottom: 0.5rem;">4K</h3>
+                        <p style="color: var(--color-text-dark);">Yüksek Çözünürlük</p>
+                    </div>
+                    <div data-aos="fade-up" style="--aos-delay: 0.2s;">
+                        <h3 style="font-size: 2rem; color: var(--color-secondary); margin-bottom: 0.5rem;">50+</h3>
+                        <p style="color: var(--color-text-dark);">Video İçeriği</p>
+                    </div>
+                    <div data-aos="fade-up" style="--aos-delay: 0.3s;">
+                        <h3 style="font-size: 2rem; color: var(--color-secondary); margin-bottom: 0.5rem;">Günlük</h3>
+                        <p style="color: var(--color-text-dark);">Yeni Güncelleme</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+             PHOTO DOWNLOAD
+             ================================ -->
+        <section id="photo-download">
+            <div class="container" style="text-align: center;">
+                <h2 style="margin-bottom: 1rem;">Fotoğrafları İndir</h2>
+                <p style="color: var(--color-text-dark); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1.05rem; line-height: 1.6;">
+                    Tüm görselleri yüksek çözünürlükte indir. Kullanım için lütfen The Prestige Hotel'e atıf yapınız.
+                </p>
+                <a href="#" class="btn btn-primary">Tüm Fotoğrafları İndir (ZIP)</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================================
+         FOOTER
+         ================================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer.about">Hakkımızda</h3>
+                    <p data-i18n="footer.aboutText">The Prestige Hotel, lüks turizmin zirvesidir, seçkin konuklarını unutulmaz deneyimlerle karşılarız.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="footer.services">Hizmetler</h3>
+                    <ul>
+                        <li><a href="rooms.html">Odalar & Suitler</a></li>
+                        <li><a href="services.html">Spa & Wellness</a></li>
+                        <li><a href="services.html">Fine Dining</a></li>
+                        <li><a href="services.html">Etkinlikler</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="footer.policies">Politikalar</h3>
+                    <ul>
+                        <li><a data-i18n="footer.privacy" href="#privacy">Gizlilik Politikası</a></li>
+                        <li><a data-i18n="footer.terms" href="#terms">Şartlar & Koşullar</a></li>
+                        <li><a data-i18n="footer.cookies" href="#cookies">Çerez Politikası</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>İletişim</h3>
+                    <p style="color: var(--color-text-dark);">
+                        📧 <a href="mailto:info@prestigehotel.com">info@prestigehotel.com</a><br>
+                        📞 <a href="tel:+902125550123">+90 (212) 555-0123</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.rights">© 2026 The Prestige Hotel. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================================
+         JAVASCRIPT FILES
+         ================================ -->
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Gallery filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                // Filter gallery items
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = '';
+                        setTimeout(() => item.style.opacity = '1', 10);
+                    } else {
+                        item.style.opacity = '0';
+                        setTimeout(() => item.style.display = 'none', 300);
+                    }
+                });
+            });
+        });
+
+        // Add fadeout animation style
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeOut {
+                from { opacity: 1; }
+                to { opacity: 0; }
+            }
+
+            .gallery-item {
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            .filter-btn.active {
+                background: var(--color-secondary);
+                color: var(--color-primary);
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
