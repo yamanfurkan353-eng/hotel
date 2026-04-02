@@ -536,11 +536,19 @@ textarea {
    GALLERY
    ================================ */
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
 .gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-lg);
-  transition: opacity var(--transition-normal);
+  transition: opacity var(--transition-normal), transform var(--transition-normal);
+  cursor: pointer;
+  aspect-ratio: 4/3;
 }
 
 .gallery-item img {
@@ -552,6 +560,19 @@ textarea {
 
 .gallery-item:hover img {
   transform: scale(1.1);
+}
+
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
 }
 
 .filter-btn {
@@ -759,6 +780,15 @@ footer {
   to { transform: rotate(360deg); }
 }
 
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 /* ================================
    UTILITIES
    ================================ */
@@ -779,3 +809,59 @@ footer {
 .invisible { visibility: hidden; }
 
 .no-scroll { overflow: hidden; }
+
+/* ================================
+   SCROLL ANIMATIONS (AOS-like)
+   ================================ */
+
+[data-aos] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+[data-aos="fade-down"] {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+[data-aos="fade-left"] {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+[data-aos="fade-right"] {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+[data-aos="zoom-in"] {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+[data-aos="zoom-out"] {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+[data-aos-delay] {
+  transition-delay: 0s;
+}
+
+[data-aos-delay="100"] { transition-delay: 0.1s; }
+[data-aos-delay="200"] { transition-delay: 0.2s; }
+[data-aos-delay="300"] { transition-delay: 0.3s; }
+[data-aos-delay="400"] { transition-delay: 0.4s; }
+[data-aos-delay="500"] { transition-delay: 0.5s; }
+[data-aos-delay="600"] { transition-delay: 0.6s; }
